@@ -22,7 +22,7 @@ def folder_creator(main_folder, sub_folders) -> None:
 
 def read_excel_file(path):
     """Read excel with pandas and return list of firs column"""
-    df = pd.read_excel("name_of_folders.xlsx", sheet_name="Sheet1")
+    df = pd.read_excel(path, sheet_name="Sheet1")
     first_column = df.iloc[:, 0].tolist()
     return first_column
 
